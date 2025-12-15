@@ -39,14 +39,25 @@ Click the file, then **Raw**, and save it in your working directory.
 ---
 
 ### Open RStudio
+   ```r
+install.packages("rmarkdown")
+install.packages(c("ape", "data.table", "fmsb", "ggplot2", "gplots", "grImport", "gridExtra", "pheatmap", "rentrez", "seqinr"))
+if (!requireNamespace("BiocManager", quietly = TRUE))
+      install.packages("BiocManager", repos ="http://cran.us.r-project.org")
+
+  BiocManager::install("msa", force = TRUE)
+  BiocManager::install("Biostrings, force = TRUE)
+  install.packages("installr", repos ="http://cran.us.r-project.org")
+library(msa) 
+
+library(installr) 
 
 1. Set your working directory to the folder where you saved the file:
    ```r
    gedwd()
    setwd("path/to/your/working/directory")
 
-install.packages("RBiotools_0.5.5.tar.gz", repos = NULL, type = "source")
-
+install.packages("RBiotools_0.5.6.tar.gz", repos = NULL, type = "source")
 
    library(RBiotools)
 
