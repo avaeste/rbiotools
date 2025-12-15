@@ -19,6 +19,7 @@ It works best in **RStudio** and uses **GenBank (NCBI) IDs** to perform analyses
   https://cran.r-project.org/bin/windows/Rtools/rtools42/files/rtools42-5355-5357.exe
   
   install.packages("pkgbuild")
+  
   library(pkgbuild)
 
 ---
@@ -46,9 +47,8 @@ Click the file, then **Raw**, and save it in your working directory.
    ```r
 install.packages("rmarkdown")
 install.packages(c("ape", "data.table", "fmsb", "ggplot2", "gplots", "grImport", "gridExtra", "pheatmap", "rentrez", "seqinr"))
-if (!requireNamespace("BiocManager", quietly = TRUE))
-      install.packages("BiocManager", repos ="http://cran.us.r-project.org")
-
+ install.packages("BiocManager", repos ="http://cran.us.r-project.org")
+library(BiocManager)
   BiocManager::install("msa", force = TRUE)
   BiocManager::install("Biostrings, force = TRUE)
   install.packages("installr", repos ="http://cran.us.r-project.org")
