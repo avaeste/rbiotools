@@ -17,6 +17,13 @@ It works best in **RStudio** and uses **GenBank (NCBI) IDs** to perform analyses
 - **Windows**: Install **Rtools42**  
   https://cran.r-project.org/bin/windows/Rtools/rtools42/rtools.html
 
+  Rtools must match your R version. In R, run: R.version.string
+  Verify Rtools installation:
+  Sys.which("make")
+  
+  install.packages("pkgbuild")
+
+
 ---
 
 ### Set up working directory
