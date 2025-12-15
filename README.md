@@ -50,7 +50,7 @@ install.packages(c("ape", "data.table", "fmsb", "ggplot2", "gplots", "grImport",
  install.packages("BiocManager", repos ="http://cran.us.r-project.org")
 library(BiocManager)
   BiocManager::install("msa", force = TRUE)
-  BiocManager::install("Biostrings, force = TRUE)
+  BiocManager::install("Biostrings", force = TRUE)
   install.packages("installr", repos ="http://cran.us.r-project.org")
 library(msa) 
 
