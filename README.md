@@ -73,6 +73,4 @@ plotUsage(eColi[1]) # hit zoom button
 
 plotHeatMapCodon(eColi) # it is saved in your working dir
 
-proteinGrouping <- runLinclust(eColi) # takes a while
 
-plotBlastMatrix(proteinGrouping)
