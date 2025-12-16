@@ -37,6 +37,7 @@ install.packages("rentrez")
 install.packages("seqinr")
 
 install.packages("BiocManager", repos ="http://cran.us.r-project.org")
+
 library(BiocManager)
 
 BiocManager::install("msa", force = TRUE)
