@@ -65,7 +65,7 @@ eColi <- c("AP012306","U00096","CP000802","CP000800","AP009378",
 
 invisible(suppressWarnings(suppressMessages(dendrogram16S(eColi)))) # downloading
 
-dendrogram16S(eColi) # hit zoom button
+# hit zoom button
 
 createAtlas(eColi[1]) # it is saved in your working dir
 
