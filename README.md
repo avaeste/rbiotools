@@ -53,7 +53,7 @@ library(Biostrings) # hit n for update none
   - `RBiotools_0.5.6.tar.gz`    
   Click the file, then **Raw**, and save it in your working directory.
 
-setwd("C:/Users/guild/Downloads") # where you 0.5.6 file is / your working dir
+setwd("C:/Users/guild/Downloads") # where your 0.5.6 file is / your working dir
 
 install.packages("RBiotools_0.5.6.tar.gz", repos = NULL, type = "source" , quiet = TRUE, verbose = FALSE)
 
