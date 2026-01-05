@@ -85,7 +85,7 @@ library(pwalign)
 
 myRunLinclust <- runLinclust
 
-edit(myRunLinclust)
+myRunLinclust <- edit(myRunLinclust)
 
 # on line 133, add this prefix pwalign::pairwiseAlignment to call, then save.
 
