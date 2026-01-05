@@ -73,4 +73,15 @@ plotUsage(eColi[1]) # hit zoom button
 
 plotHeatMapCodon(eColi) # it is saved in your working dir
 
+#pwalign fix - blast matrix exercise
+if (!requireNamespace("pwalign", quietly = TRUE))
+    BiocManager::install("pwalign")
+library(pwalign)
+myRunLinclust <- runLinclust
+edit(myRunLinclust)
+# on line 133, add this prefix pwalign::pairwiseAlignment to call, then save.
+proteinGrouping <- myRunLinclust(eColi)
+plotBlastMatrix(proteinGrouping)
+
+
 
